@@ -30,7 +30,7 @@ app.use("/api/search",searchRoute)
 app.use("/api/user",userRoute)
 app.use("/api/team",teamRoute)
 
-const port = process.env.PORT || 8000;
-app.listen(port,()=>{
+const port = Number(process.env.PORT) || 8000;
+app.listen(port,"0.0.0.0",()=>{
     console.log(`Server is running on Port ${port}`)
 })
