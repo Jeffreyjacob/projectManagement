@@ -21,6 +21,7 @@ const Project = ({params}:Props) => {
         <ModelNewTask
           isOpen={isModalNewTaskOpen}
           onClose={()=>setIsModalNewTaskOpen(false)}
+          id={id}
         />
        <ProjectHeader activeTab={activeTab} setActiveTab= {setActiveTab}/>
        {
